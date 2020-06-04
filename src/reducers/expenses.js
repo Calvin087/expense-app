@@ -25,6 +25,8 @@ const expenseReducer = (state = expenseReducerDefaultState, action) => {
                     return expense
                 }
             })
+            case 'SET_EXPENSES': // sets expenses array completely inside database
+                return action.expenses
         default:
             return state
     }
